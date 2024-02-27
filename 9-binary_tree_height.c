@@ -11,18 +11,18 @@
 size_t find_height(const binary_tree_t *tree)
 {
 	size_t height_left = 0;
-        size_t height_right = 0;
+	size_t height_right = 0;
 
 	if (tree == NULL)
-		return(0);
+		return (0);
 
 	height_left = 1 + find_height(tree->left);
-        height_right = 1 + find_height(tree->right);
+	height_right = 1 + find_height(tree->right);
 
 	if (height_left > height_right)
-                return height_left;
-        else
-                return height_right;
+		return (height_left);
+	else
+		return (height_right);
 }
 
 /**
