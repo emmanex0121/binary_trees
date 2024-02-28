@@ -2,6 +2,10 @@
 #include "11-binary_tree_size.c"
 
 /**
+ * binary_tree_is_full - checks if tree is full
+ * @tree: pointer to tree to be checked
+ *
+ * Return: 0 if tree NULL and if tree is not full, OR 1 if tree is full
  */
 
 int binary_tree_is_full(const binary_tree_t *tree)
