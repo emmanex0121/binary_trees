@@ -1,5 +1,24 @@
 #include "binary_trees.h"
-#include "11-binary_tree_size.c"
+/*#include "11-binary_tree_size.c"*/
+
+/**
+ * binary_tree_size - counts all the nodes in a tree
+ * @tree: Tree to be counted
+ *
+ * Return: size of tree on success, OR 0 if tree is NULL
+ */
+
+size_t binary_tree_size(const binary_tree_t *tree)
+{
+        size_t size = 0;
+
+        if (!tree)
+                return (0);
+
+        size = size + binary_tree_size(tree->left);
+        size = size + binary_tree_size(tree->right);
+        return (size + 1);
+}
 
 /**
  * binary_tree_is_full - checks if tree is full
