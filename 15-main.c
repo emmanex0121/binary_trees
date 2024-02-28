@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "binary_trees.h"
-#include "11-binary_tree_size.c"
 
 /**
  * main - Entry point
