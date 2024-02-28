@@ -25,10 +25,10 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	{
 		left_branch = binary_tree_size(tree->left);
 		right_branch = binary_tree_size(tree->right);
-	}
 
-	if (left_branch == right_branch)
-		return (1);
-	else
-		return (0);
+		if (left_branch == right_branch)
+			return (1);
+		else
+			return (0);
+	}
 }
